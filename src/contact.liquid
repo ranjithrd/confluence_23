@@ -1,0 +1,50 @@
+---
+layout: layout
+---
+
+<div class="hero">
+  <h1>Contact</h1>
+  <!-- <p>Call organizers with the phone numbers below or make enquiries with the form.</p> -->
+
+  <div class="spacer"></div>
+
+  <div class="columns">
+    {% include "contact-column.liquid", title: "Teachers", contacts:
+  		contacts.teachers %}
+
+    <!--  -->
+
+    {% include "contact-column.liquid", title: "Student Coordinators",
+  		contacts: contacts.students %}
+
+    <!--  -->
+
+    {% include "contact-column.liquid", title: "Event Coordinators",
+  		contacts: contacts.event %}
+  </div>
+</div>
+
+<form class="contact-form" action="https://usebasin.com/f/c0ec46460f89" method="POST">
+  <h3>Contact Form</h3>
+
+  <div class="two-col">
+    <div class="input">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+    </div>
+
+    <div class="input">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+    </div>
+  </div>
+
+  <div class="input input-ta">
+    <label for="message">Message</label>
+    <textarea placeholder="Enter your message here..." id="message" name="message" required></textarea>
+  </div>
+
+  <div class="h-captcha" data-sitekey="7fe715a1-151f-4c63-b497-bd971974df05"></div>
+
+  <button type="submit" class="primary-button">Submit</button>
+</form>

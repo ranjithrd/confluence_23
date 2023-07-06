@@ -1,0 +1,111 @@
+<nav>
+  {%- comment -%}
+  <a href="/techsprint"><img src="/_media/ts_logo_with_bg.png" alt="Logo" height="67px"/></a>
+  {%- endcomment -%}<a class="nav-logo" href="/techsprint"><img
+      src="/_media/ts_22_final.png"
+      alt="Logo"
+      height="67px"
+      class="nav-logo-image" /><div class="nav-logo-text">TechSprint '23</div>
+  </a>
+
+  <div class="links">
+    <button class="close-button" onclick="closeMenu()">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+    </button>
+    <a href="/">DPS IT Council</a>
+    {%- comment -%}
+    <a href="/about">About</a>
+    {%- endcomment -%}
+    <!-- <a href="/team">Team</a> -->
+    <a href="/techsprint/contact">Contact</a>
+    <div onclick="rotate()" class="eventsButton">
+      <span>Events</span>
+      <div id="dropdownButton">
+        <span class="material-symbols-outlined">
+          chevron_right
+        </span>
+      </div>
+    </div>
+    <div id="ev_popup">
+      {% for event in collections.event %}
+        <a href="{{ event.url }}">{{ event.data.title }}
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button class="menu-button" onclick="openMenu()">
+    <span class="material-symbols-outlined">
+      menu
+    </span>
+  </button>
+</nav>
+
+<script defer>
+  window.eventsOpened = false
+  function openMenu(e) {
+            document
+              .getElementsByClassName("links")[0]
+              .classList
+              .remove("invisible")
+              document
+              .getElementsByClassName("links")[0]
+              .classList
+              .add("visible")
+          }
+        
+          function closeMenu(e) {
+            document
+              .getElementsByClassName("links")[0]
+              .classList
+              .remove("visible")
+              document
+              .getElementsByClassName("links")[0]
+              .classList
+              .add("invisible")
+          }
+        
+          function rotate(e) {
+            if (window.eventsOpened) {
+              window.eventsOpened = false
+              rotateButtonBack()
+            } else {
+              window.eventsOpened = true
+              rotateButton()
+            }
+          }
+        
+          function rotateButton(e) {
+            document
+              .getElementById("dropdownButton")
+              .classList
+              .remove("rotateUp")
+              document
+              .getElementById("dropdownButton")
+              .classList
+              .add("rotateDown")
+        
+            document
+            .getElementById("ev_popup")
+            .classList
+            .add("popupVisible")
+        }
+        
+        function rotateButtonBack(e) {
+          document
+            .getElementById("dropdownButton")
+            .classList
+            .remove("rotateDown")
+            document
+            .getElementById("dropdownButton")
+            .classList
+            .add("rotateUp")
+        
+          document
+          .getElementById("ev_popup")
+          .classList
+          .remove("popupVisible")}</script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />

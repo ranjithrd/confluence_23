@@ -1,0 +1,25 @@
+<footer>
+  <div id="f-content">
+    <h2>DiPS TechSprint 2023</h2>
+    <!-- <div class="spacer"></div> -->
+    <div class="grid">
+      <div class="col">
+        <a href="https://www.instagram.com/dipsitcouncil/">Instagram</a>
+        <a href="/">IT Council Website</a>
+      </div>
+      <div class="col">
+        <a href="/#about">About</a>
+        <a href="/#contact">Contact</a>
+      </div>
+      <div class="col">
+        {% for event in collections.event %}
+          <a href="{{ event.url }}">{{ event.data.title }}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div id="f-bar" class="barlow">
+    <strong>© DiPS IT COUNCIL 2023</strong>
+  </div>
+</footer>

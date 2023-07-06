@@ -1,0 +1,81 @@
+backend:
+    name: git-gateway
+    branch: main
+
+media_folder: /src/_media
+public_folder: /_media
+
+collections:
+    # Events
+    - name: events
+      label: Events
+      folder: src/events
+      create: true
+      slug: "{{slug}}"
+      editor:
+          preview: false
+      fields:
+          - { name: title, label: Title, widget: string }
+          - { name: img, label: Image, widget: image }
+          - { name: dates, label: Dates, widget: string }
+          - { name: times, label: Times, widget: string }
+          - { name: venue, label: Venue, widget: string }
+          - { name: description, label: Description, widget: markdown }
+          - { name: rules, label: "Rules and Regulations", widget: markdown }
+          - name: organizers
+            label: Organizers
+            widget: list
+            summary: "{{fields.name}} | {{fields.desc}}"
+            fields:
+                - { name: name, label: Name, widget: string }
+                - { name: desc, label: Description, widget: string }
+                - { name: phone, label: Phone, widget: string }
+                - { name: img, label: Image, widget: image }
+          - {
+                name: embed_link,
+                label: "Registration Form Embed Link",
+                widget: string,
+            }
+
+    - name: config
+      label: Pages Configuration
+      extension: json
+      editor:
+          preview: false
+
+      files:
+          - file: "src/_data/home.json"
+            label: "Home Page"
+            name: home
+
+            fields:
+                - { name: title, label: Title, widget: string }
+                - { name: summary, label: "Event Summary", widget: markdown }
+                - { name: cta, label: "CTA Text", widget: string }
+
+          - file: "src/_data/contacts.json"
+            label: "Contact Page"
+            name: contacts
+
+            fields:
+                - name: teachers
+                  label: Teachers
+                  widget: list
+                  summary: "{{name}}"
+                  fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: number, label: "Phone Number", widget: string }
+                - name: students
+                  label: "Students Coordinators"
+                  widget: list
+                  summary: "{{name}}"
+                  fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: number, label: "Phone Number", widget: string }
+                - name: event
+                  label: "Event Coordinators"
+                  widget: list
+                  summary: "{{name}}"
+                  fields:
+                      - { name: name, label: Name, widget: string }
+                      - { name: number, label: "Phone Number", widget: string }

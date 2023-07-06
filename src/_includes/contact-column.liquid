@@ -1,0 +1,11 @@
+<div class="column">
+    <div class="c-title">
+        <p><strong>{{ title }}</strong></p>
+    </div>
+    {% for contact in contacts %}
+    <div class="c-contact">
+        {{ contact.name }}:
+        <a href="tel:{{ contact.number }}"> {{ contact.number }}</a>
+    </div>
+    {% endfor %}
+</div>

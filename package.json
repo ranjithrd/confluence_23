@@ -1,0 +1,22 @@
+{
+	"name": "confluence_23",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test:11ty": "eleventy --config=src/eleventy.js --input=src --output=_site --watch --serve",
+		"build:11ty": "eleventy --config=src/eleventy.js --input=src --output=_site",
+		"test:scss": "sass --watch src/scss:_site/scss",
+		"build:scss": "sass src/scss:_site/scss",
+		"test": "run-p test:11ty test:scss",
+		"build": "run-s build:scss build:11ty"
+	},
+	"repository": "https://github.com/ranjithrd/confluence_23.git",
+	"author": "Ranjith RD <ranjithrd03@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"@11ty/eleventy": "11ty/eleventy",
+		"markdown-it": "^13.0.1",
+		"npm-run-all": "^4.1.5",
+		"sass": "^1.54.0"
+	}
+}

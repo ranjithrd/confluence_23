@@ -1,0 +1,121 @@
+---
+layout: layout
+---
+
+<div class="hero-cont" style="background-image:url('{{ img }}')">
+  <!-- <img src="{{ img }}" alt="{{ title }}" /> -->
+  <div class="event-hero">
+    <div class="hero-content">
+      <div class="title-section">
+        <h1>
+          {{ title }}
+        </h1>
+        {%- comment -%}
+        <a href="#register">
+        <button class="primary-button">Register</button>
+        </a>
+        {%- endcomment -%}
+      </div>
+      <div class="spacer"></div>
+      <p>
+        {%- comment -%}
+        <strong>{{ dates }} | {{ times }} | {{ venue }}</strong>
+        {%- endcomment -%}
+        {%- comment -%}
+        TODO ADD TIME WHEN SCHEDULE IS DECIDED
+        {%- endcomment -%}
+          <strong>
+          {{ dates }}
+          |
+        {{ venue }}
+      </strong>
+      </p>
+        <p class="event-desc"> {{ description | markdownify }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<hr/>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<div class="event-padded">
+  <h3>Rules and Regulations</h3>
+  <div class="spacer"></div>
+  <div class="rules-cont">
+    <div class="rules">
+      <div class="rules-content">
+        {{ rules | mdfy }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<hr/>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+{% if organizers.length > 0 %}
+  <div class="event-padded">
+    <h3>Organizers</h3>
+    <div class="spacer"></div>
+    <div class="orgs">
+      {% for organizer in organizers %}
+        <div class="org">
+          <div class="org-info">
+            <img
+              src="{{ organizer.img }}"
+              alt="{{ organizer.name }}"
+              class="picture" />
+            <h4>{{ organizer.name }}
+            </h4>
+            <p>{{ organizer.desc }}
+            </p>
+            <a href="tel:{{ organizer.phone }}">{{ organizer.phone }}
+            </a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+  <hr/>
+{% endif %}
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+{%- comment -%}
+<div id="register"></div>
+{%- endcomment -%}{%- comment -%}
+<div id="form" class="event-padded">
+<button class="primary-button" onclick="showForm()" id="register_button">
+Register
+</button>
+<iframe src="about:blank" frameborder="0" id="frame_embed"></iframe>
+</div>
+{%- endcomment -%}{%- comment -%}
+<script>
+function showForm() {
+document
+.getElementById("frame_embed")
+.classList
+.add("show")
+document
+.getElementById("frame_embed")
+.src = "{{ embed_link }}"
+document.getElementById("register_button").classList.add("hide")
+}
+</script>
+{%- endcomment -%}

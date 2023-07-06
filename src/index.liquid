@@ -1,0 +1,157 @@
+---
+layout: layout
+---
+
+<!-- COUNTDOWN -->
+
+<div id="countdown">
+  <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds left</div>
+</div>
+
+<script>
+  const day = 1000 * 60 * 60 * 24
+  const hour = 1000 * 60 * 60
+  const minute = 1000 * 60
+  const second = 1000
+  const finalDate = new Date("August 11, 2023 08:00:00")
+
+  function calculateCountdown() {
+    const date = new Date()
+      let difference = Math.abs(finalDate - date)
+
+        let dL,
+          hL,
+          mL,
+          sL
+
+        dL = Math.floor(difference / day)
+        difference -= dL * day
+
+        hL = Math.floor(difference / hour)
+        difference -= hL * hour
+
+        mL = Math.floor(difference / minute)
+        difference -= mL * minute
+
+        sL = Math.floor(difference / second)
+        difference -= sL * second
+
+        const spanWrap = (val, id) => `<span id="c-${id}" class="c-val">${val}</span>`
+      const pluralize = (str, val) => (
+        val == 1
+          ? str
+          : str + "s"
+      )
+    const stringify = (val, root, id) => `${
+      spanWrap(val, id)
+    } ${
+      pluralize(root, val)
+    }`
+
+    let text = `${
+      stringify(dL, "day", "d")
+    } ${
+      stringify(hL, "hour", "h")
+    } ${
+      stringify(mL, "minute", "m")
+    } and ${
+      stringify(sL, "second", "s")
+    } left`
+
+    document.getElementById("countdowntext").innerHTML = text
+  }
+  setInterval(calculateCountdown, 1000)
+</script>
+
+<div id="particles-js">
+  <div class="hero">
+    <h1>
+      {{ home.title | markdownify }}
+    </h1>
+    <p>
+      {{ home.summary | markdownify }}
+    </p>
+  </div>
+</div>
+
+{% include 'particles-script' %}
+
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<div class="padded">
+  <h1>Events</h1>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+<div class="events">
+  {% for event in collections.event %}
+    <a href="{{ event.url }}" class="e">
+      <div class="event">
+        {%- comment -%}
+        <div class="event-img">
+        <img src="{{ event.data.img }}" alt="{{ event.data.title }} image"/>
+        </div>
+        {%- endcomment -%}
+        <div class="event-img" style="background-image: url('{{ event.data.img }}');">{%- comment -%}
+          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image"/>
+          {%- endcomment -%}
+        </div>
+        <div class="event-info">
+          <h2>{{ event.data.title }}
+          </h2>
+          <p>
+            <strong>{{ event.data.dates }}
+              {{ " " }}
+              {%- comment -%}
+              TODO ADD WHEN SCEDULE COMES
+              {%- endcomment -%}
+              {%- comment -%}
+              |
+              {{ event.data.times }}
+              {%- endcomment -%}
+              |
+            {{ event.data.venue }}
+          </strong>
+          </p>
+            <p>
+          {{ event.data.description | markdownify }}
+          </p><div class="spacer"> </div>
+
+          <div class="event-btns">
+            <button class="primary-button">
+              Learn More
+            </button>
+            {%- comment -%}
+            <a href="{{ event.url }}#register">
+            {%- endcomment -%}
+          {%- comment -%}
+          <button class="secondary-button">
+          Register
+          </button>
+          {%- endcomment -%}
+            {%- comment -%}
+            </a>
+            {%- endcomment -%}
+          </div>
+
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/"
+        })
+      }
+    })
+  }
+</script>
