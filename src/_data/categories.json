@@ -3,5 +3,40 @@
 		"title": "Techsprint",
 		"logo": "/_media/ts.png",
 		"description": "Techsprint is the IT Council's annual fest"
+	},
+	"sports": {
+		"title": "Sports",
+		"logo": "/",
+		"description": "Description"
+	},
+	"literary": {
+		"title": "Literature",
+		"logo": "/",
+		"description": "Description"
+	},
+	"humanities": {
+		"title": "Humanities",
+		"logo": "/",
+		"description": "Description"
+	},
+	"environment": {
+		"title": "Environment",
+		"logo": "/",
+		"description": "Description"
+	},
+	"commerce": {
+		"title": "Commerce",
+		"logo": "/",
+		"description": "Description"
+	},
+	"science": {
+		"title": "Science",
+		"logo": "/",
+		"description": "Description"
+	},
+	"cultural": {
+		"title": "Cultural",
+		"logo": "/",
+		"description": "Description"
 	}
 }

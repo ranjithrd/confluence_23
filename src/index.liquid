@@ -69,13 +69,20 @@ layout: layout
     </h4>
   </div>
 
-  <div class="hero fullheight center">
+  <!-- <div id="particles-js"> -->
+  <div class="hero fullheight center" id="welcome">
     <h1>Welcome to Confluence 2023</h1>
     <div class="spacer"></div>
     <h4>Take part in 29 events across 4 days</h4>
-    <h4>These events are organized in 8 categories spanning the fields of academics, sports, and extracurriculars.</h4>
+    <h4>These events are organized in 8 categories spanning the fields of academics, sports, and extracurriculars.
+    </h4>
   </div>
+  <!-- </div> -->
 </div>
+
+{% comment %}
+{% include 'particles-script' %}
+{% endcomment %}
 
 <div id="constellations" class="primary">
   <div class="center padded-div">
@@ -96,7 +103,7 @@ layout: layout
   {% assign events = collections.event | where: 'data.category', cat[0] %}
 
   <div class="padded-div" id="{{ cat[0] }}">
-    <h1>{{ cat[1].title }}</h1>
+    <h1 class="huge">{{ cat[1].title }}</h1>
     <p>{{ cat[1].description }}</p>
   </div>
 
@@ -153,6 +160,21 @@ layout: layout
   <div class="spacer"></div>
   {% endfor %}
 </div>
+
+<a href="/register" class="hero primary padded-div center">
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <h1>Register for Confluence Now</h1>
+  <h4>Schools can register participants in the form below</h4>
+  <div class="spacer"></div>
+  <button class="primary-button">Register</button>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+</a>
 
 <script>
   var tl = anime.timeline({ easing: 'easeInOutQuad', duration: 750 });

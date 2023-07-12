@@ -1,7 +1,7 @@
 ---
 category: techsprint
 title: Code Jam
-img: /_media/hackathon-picture.png
+img: /_media/hackathon_picture.png
 dates: TBD
 times: TBD
 venue: Offline
@@ -40,5 +40,4 @@ organizers:
     desc: Event Head
     phone: +91 90190 23605
     img: /_media/default_user.png
-embed_link: https://example.com
 ---

@@ -25,8 +25,10 @@ $primary: white;
 // 	--light-primary: #e9e9e9;
 // }
 
+
 // COLOR SCHEME TWO
 :root {
+	color: #32174D;
 	--dark-primary: #4B2374;
 	--primary: #32174D;
 	--button: #240d60;
@@ -105,4 +107,8 @@ h5,
 p {
 	margin: 0;
 	padding: 0;
+}
+
+.huge {
+	font-size: 2.5em;
 }

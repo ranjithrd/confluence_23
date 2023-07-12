@@ -4,6 +4,7 @@ backend:
 
 media_folder: /src/_media
 public_folder: /_media
+local_backend: true
 
 collections:
     # Events
@@ -33,8 +34,8 @@ collections:
                 - { name: phone, label: Phone, widget: string }
                 - { name: img, label: Image, widget: image }
           - {
-                name: embed_link,
-                label: "Registration Form Embed Link",
+                name: teamsize,
+                label: "Team Size",
                 widget: string,
             }
 
