@@ -139,8 +139,8 @@ main {
 	}
 	#ev_popup {
 		position: absolute;
-		top: 5em;
-		right: 1em;
+		top: 6em;
+		right: 8.5em;
 		transition: all 200ms;
 
 		display: flex;
@@ -149,10 +149,10 @@ main {
 
 		opacity: 0;
 		padding: 2em;
-		background-color: black;
+		background-color: white;
 		box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 		* {
-			color: white !important;
+			color: black !important;
 		}
 	}
 }
