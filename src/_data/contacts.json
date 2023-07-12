@@ -1,0 +1,19 @@
+{
+  "teachers": [
+    {
+      "name": "Teacher 0",
+      "number": "+00 00000 00000"
+    }
+  ],
+  "students": [{
+      "name": "Zaid Mallik",
+      "number": "+91 99805 69115"
+    }
+  ],
+  "event": [
+    {
+      "name": "Event Head 0",
+      "number": "+00 00000 00000"
+    }
+  ]
+}

@@ -11,7 +11,8 @@ html {
 .primary-button {
 	border: var(--button) 2px solid;
 	border-radius: 10px;
-	background-color: var(--light-primary);
+	// background-color: var(--light-primary);
+	background-color: white;
 	padding: 10px 14px;
 	text-transform: uppercase;
 	color: var(--button);

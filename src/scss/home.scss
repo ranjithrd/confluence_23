@@ -40,8 +40,12 @@
 	gap: 1em;
 
 	//a {
-		// display: inline-block;
+	// display: inline-block;
 	//}
+}
+
+.padded-div {
+	padding: 2em 3em;
 }
 
 .hero {
@@ -51,18 +55,17 @@
 	flex-direction: column;
 	justify-content: center;
 	z-index: 100;
-	background-image: linear-gradient(rgba(0, 0, 0, 0) 75%, #000);
-	
+	// background-image: linear-gradient(rgba(0, 0, 0, 0) 75%, #000);
+
 	h1 {
-		background: radial-gradient(#eff1ff, #000);
+		// background: radial-gradient(#eff1ff, #000);
 		background-size: 100% 200%;
 		background-position: 50% 100%;
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		// -webkit-background-clip: text;
+		// background-clip: text;
+		// -webkit-text-fill-color: transparent;
 		margin: 0;
 	}
-	   
 
 	p {
 		margin-top: 2rem;
@@ -70,6 +73,52 @@
 	}
 }
 
+.fullheight {
+	height: 100vh;
+}
+
+.center {
+	text-align: center;
+}
+
+// FIRST HERO
+
+#confluence-hero {
+	position: relative;
+	text-align: center;
+}
+
+#outlinelogo {
+	position: absolute;
+	top: 10vh;
+	left: 0;
+	padding: 0 4em;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#outlinelogo svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#confluencetitle {
+	font-size: 5em;
+}
+
+// CONSTELLATIONS
+#constellations svg {
+	width: 100vw;
+	height: auto;
+}
+
+g {
+	cursor: pointer;
+}
+
+// OTHER STUFF
 hr {
 	width: 50%;
 	border: rgb(159, 159, 159) solid 0.3px;
@@ -88,6 +137,18 @@ hr {
 .events a {
 	text-decoration: none;
 	color: inherit;
+}
+
+.events, .event {
+	box-sizing: border-box;
+}
+
+.event {
+	border: 0.5px solid white;
+
+	:hover {
+		// border: 1px solid var(--light-primary);
+	}
 }
 
 .event-img {
@@ -109,6 +170,7 @@ hr {
 @media (min-width: 720px) {
 	.event {
 		background-color: rgba(0, 0, 0, 0);
+		// border: 0.5px solid var(--light-primary);
 	}
 
 	.event-img {
@@ -116,26 +178,30 @@ hr {
 	}
 
 	.event-info {
-		background: linear-gradient(
-			to right,
-			rgba(0, 0, 0, 0.0),
-			rgba(0, 0, 0, 0.75)
-		) !important;
+		// background: linear-gradient(
+		// 	to right,
+		// 	rgba(0, 0, 0, 0),
+		// 	rgba(0, 0, 0, 0.75)
+		// ) !important;
 	}
 
 	a:nth-child(odd) {
 		.event-info {
-			background: linear-gradient(
-				to left,
-				rgba(0, 0, 0, 0.0),
-				rgba(0, 0, 0, 0.75)
-			) !important;
+			// background: linear-gradient(
+			// 	to left,
+			// 	rgba(0, 0, 0, 0),
+			// 	rgba(0, 0, 0, 0.75)
+			// ) !important;
 		}
 	}
 }
 
 // MOBILE
 @media (max-width: 720px) {
+	.events {
+		padding: 1em 2em;
+	}
+
 	.event {
 		display: flex;
 		flex-direction: column;
@@ -155,7 +221,7 @@ hr {
 		}
 
 		.event-info {
-			background-color: var(--light-primary);
+			// background-color: var(--light-primary);
 			padding: 2.5em;
 			display: flex;
 			flex-direction: column;
@@ -176,6 +242,7 @@ hr {
 		display: flex;
 		flex-direction: column;
 		gap: 0.75em;
+		padding: 2em 3em;
 	}
 	.event {
 		// display: flex;
@@ -186,10 +253,10 @@ hr {
 		// gap: 0.75em;
 		display: block;
 		height: 45vh;
+		width: 100%;
 
 		.event-img {
 			height: 45vh;
-			width: 100%;
 			position: absolute;
 
 			img {
@@ -207,10 +274,13 @@ hr {
 			flex-direction: column;
 			justify-content: center;
 			gap: 8px;
-			width: 100%;
-			padding: 2em;
+			padding: 4em;
 			padding-left: 50vw;
 			height: 45vh;
+		}
+
+		.event-img, .event-info {
+			width: calc(100% - 4em) !important;
 		}
 	}
 	a:nth-child(odd) {
@@ -218,7 +288,7 @@ hr {
 			flex-direction: row-reverse;
 		}
 		.event-info {
-			padding-left: 2em;
+			padding-left: 4em;
 			padding-right: 50vw;
 		}
 	}

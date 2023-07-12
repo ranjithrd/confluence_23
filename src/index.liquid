@@ -5,7 +5,7 @@ layout: layout
 <!-- COUNTDOWN -->
 
 <div id="countdown">
-  <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds left</div>
+  <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds</div>
 </div>
 
 <script>
@@ -13,94 +13,109 @@ layout: layout
   const hour = 1000 * 60 * 60
   const minute = 1000 * 60
   const second = 1000
-  const finalDate = new Date("August 11, 2023 08:00:00")
+  const finalDate = new Date("August 14, 2023 08:00:00")
 
   function calculateCountdown() {
     const date = new Date()
-      let difference = Math.abs(finalDate - date)
+    let difference = Math.abs(finalDate - date)
 
-        let dL,
-          hL,
-          mL,
-          sL
+    let dL,
+      hL,
+      mL,
+      sL
 
-        dL = Math.floor(difference / day)
-        difference -= dL * day
+    dL = Math.floor(difference / day)
+    difference -= dL * day
 
-        hL = Math.floor(difference / hour)
-        difference -= hL * hour
+    hL = Math.floor(difference / hour)
+    difference -= hL * hour
 
-        mL = Math.floor(difference / minute)
-        difference -= mL * minute
+    mL = Math.floor(difference / minute)
+    difference -= mL * minute
 
-        sL = Math.floor(difference / second)
-        difference -= sL * second
+    sL = Math.floor(difference / second)
+    difference -= sL * second
 
-        const spanWrap = (val, id) => `<span id="c-${id}" class="c-val">${val}</span>`
-      const pluralize = (str, val) => (
-        val == 1
-          ? str
-          : str + "s"
-      )
-    const stringify = (val, root, id) => `${
-      spanWrap(val, id)
-    } ${
-      pluralize(root, val)
-    }`
+    const spanWrap = (val, id) => `<span id="c-${id}" class="c-val">${val}</span>`
+    const pluralize = (str, val) => (
+      val == 1
+        ? str
+        : str + "s"
+    )
+    const stringify = (val, root, id) => `${spanWrap(val, id)
+      } ${pluralize(root, val)
+      }`
 
-    let text = `${
-      stringify(dL, "day", "d")
-    } ${
-      stringify(hL, "hour", "h")
-    } ${
-      stringify(mL, "minute", "m")
-    } and ${
-      stringify(sL, "second", "s")
-    } left`
+    let text = `${stringify(dL, "day", "d")
+      } ${stringify(hL, "hour", "h")
+      } ${stringify(mL, "minute", "m")
+      } and ${stringify(sL, "second", "s")
+      } left`
 
     document.getElementById("countdowntext").innerHTML = text
   }
   setInterval(calculateCountdown, 1000)
 </script>
 
-<div id="particles-js">
-  <div class="hero">
-    <h1>
-      {{ home.title | markdownify }}
+<!-- END COUNTDOWN -->
+
+<div class="gradient">
+  <div class="hero fullheight" id="confluence-hero">
+    <div id="outlinelogo"></div>
+    <h1 id="confluencetitle">
     </h1>
-    <p>
-      {{ home.summary | markdownify }}
-    </p>
+    <h4>
+      Inter School Fest hosted by DPS South
+    </h4>
+  </div>
+
+  <div class="hero fullheight center">
+    <h1>Welcome to Confluence 2023</h1>
+    <div class="spacer"></div>
+    <h4>Take part in 29 events across 4 days</h4>
+    <h4>These events are organized in 8 categories spanning the fields of academics, sports, and extracurriculars.</h4>
   </div>
 </div>
 
-{% include 'particles-script' %}
-
-
-<div class="spacer"></div>
-<div class="spacer"></div>
-
-<div class="padded">
-  <h1>Events</h1>
+<div id="constellations" class="primary">
+  <div class="center padded-div">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <h1>Take a look at our events</h1>
+    <sub>Click on any category to find its events</sub>
+  </div>
 </div>
 
-<div class="spacer"></div>
-<div class="spacer"></div>
+<div class="padded-div center primary">
+  <h3>Categories</h3>
+</div>
 
-<div class="events">
-  {% for event in collections.event %}
+<div id="categories" class="primary">
+  {% for cat in categories %}
+
+  {% assign events = collections.event | where: 'data.category', cat[0] %}
+
+  <div class="padded-div" id="{{ cat[0] }}">
+    <h1>{{ cat[1].title }}</h1>
+    <p>{{ cat[1].description }}</p>
+  </div>
+
+  <div class="events">
+    {% for event in events %}
     <a href="{{ event.url }}" class="e">
       <div class="event">
         {%- comment -%}
         <div class="event-img">
-        <img src="{{ event.data.img }}" alt="{{ event.data.title }} image"/>
+          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
         </div>
         {%- endcomment -%}
         <div class="event-img" style="background-image: url('{{ event.data.img }}');">{%- comment -%}
-          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image"/>
+          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
           {%- endcomment -%}
         </div>
+        {% assign cat = categories[event.data.category] %}
         <div class="event-info">
+          <h4>{{ cat.title }}</h4>
           <h2>{{ event.data.title }}
           </h2>
           <p>
@@ -114,35 +129,106 @@ layout: layout
               {{ event.data.times }}
               {%- endcomment -%}
               |
-            {{ event.data.venue }}
-          </strong>
+              {{ event.data.venue }}
+            </strong>
           </p>
-            <p>
-          {{ event.data.description | markdownify }}
-          </p><div class="spacer"> </div>
+          <p>
+            {{ event.data.description | markdownify }}
+          </p>
+          <div class="spacer"> </div>
 
           <div class="event-btns">
             <button class="primary-button">
               Learn More
             </button>
-            {%- comment -%}
-            <a href="{{ event.url }}#register">
-            {%- endcomment -%}
-          {%- comment -%}
-          <button class="secondary-button">
-          Register
-          </button>
-          {%- endcomment -%}
-            {%- comment -%}
-            </a>
-            {%- endcomment -%}
           </div>
 
         </div>
       </div>
     </a>
+    {% endfor %}
+  </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
   {% endfor %}
 </div>
+
+<script>
+  var tl = anime.timeline({ easing: 'easeInOutQuad', duration: 750 });
+
+  for (const a of "Confluence 2023".split("")) {
+    document.getElementById("confluencetitle").innerHTML += `<span>${a}</span>`
+  }
+
+  async function main() {
+    document.getElementById("outlinelogo").innerHTML = await (await fetch("/_media/confluence_logo_outline_svg.svg"))
+      .text()
+
+    if (window.innerWidth > 720) {
+      document.getElementById("constellations").innerHTML += await (await fetch("/_media/constellations_desktop.svg"))
+        .text()
+    } else {
+      document.getElementById("constellations").innerHTML += await (await fetch("/_media/constellations_mobile.svg"))
+        .text()
+    }
+
+    for (const a of document.getElementsByTagName("g")) {
+      a.onclick = (event) => {
+        window.location.href = "/#" + a.id
+      }
+    }
+
+    console
+      .log(await (await fetch("/_media/confluence_logo_outline_svg.svg")).text())
+
+    console
+      .log("animation")
+
+
+    tl
+      .add({
+        targets: '#outlinelogo svg path',
+        strokeDashoffset: [
+          anime.setDashoffset, 0
+        ],
+        opacity: 1,
+        easing: 'easeInOutSine',
+        duration: 450,
+        delay: function (el, i) {
+          return i * 250 - 1500
+        },
+        direction: 'alternate',
+        loop: false
+      })
+
+    tl
+      .add({
+        targets: "#outlinelogo",
+        opacity: [
+          1, 0.4
+        ],
+        duration: 700
+      })
+    tl
+      .add({
+        targets: "#confluencetitle span",
+        opacity: [
+          0, 1
+        ],
+        delay: anime.stagger(80),
+        duration: 400
+      })
+
+    tl.add({
+      targets: "#confluence-hero h4",
+      opacity: [0, 1],
+      duration: 500,
+    })
+  }
+
+  main()
+</script>
 
 <script>
   if (window.netlifyIdentity) {

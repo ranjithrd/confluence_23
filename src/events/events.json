@@ -1,5 +1,5 @@
 {
-	"layout": "../techsprint/event.liquid",
+	"layout": "../event.liquid",
 	"permalink": "/{{title | slug}}/",
 	"tags": "event"
 }

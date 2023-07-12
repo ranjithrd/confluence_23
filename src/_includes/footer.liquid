@@ -1,25 +1,31 @@
 <footer>
   <div id="f-content">
-    <h2>DiPS TechSprint 2023</h2>
+    <h2>DPS Confluence 2023</h2>
     <!-- <div class="spacer"></div> -->
     <div class="grid">
-      <div class="col">
+      <!-- <div class="col">
         <a href="https://www.instagram.com/dipsitcouncil/">Instagram</a>
         <a href="/">IT Council Website</a>
+      </div> -->
+      <div class="col">
+        <h4>Socials</h4>
+        <a href="/#about">Instagram</a>
+        <a href="/#contact">YouTube</a>
       </div>
       <div class="col">
-        <a href="/#about">About</a>
-        <a href="/#contact">Contact</a>
-      </div>
-      <div class="col">
-        {% for event in collections.event %}
-          <a href="{{ event.url }}">{{ event.data.title }}
-          </a>
+        <h4>Categories</h4>
+        {% for cat in categories %}
+        <a href="/#{{ cat[0] }}">{{ cat[1].title }}
+        </a>
         {% endfor %}
       </div>
     </div>
   </div>
-  <div id="f-bar" class="barlow">
-    <strong>© DiPS IT COUNCIL 2023</strong>
+  <div class="spacer"></div>
+  <div class="spacer">
   </div>
+  <div class="spacer"></div>
+  <!-- <div id="f-bar" class="barlow">
+    <strong>© DiPS IT COUNCIL 2023</strong>
+  </div> -->
 </footer>
