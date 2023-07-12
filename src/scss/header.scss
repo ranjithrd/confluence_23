@@ -116,6 +116,7 @@ main {
 @media (min-width: 720px) {
 	nav {
 		padding-left: 3em;
+		padding-right: 2.4em;
 	}
 	.links {
 		flex-direction: row;
@@ -240,4 +241,34 @@ main {
 	display: flex;
 	opacity: 1;
 	z-index: 10000000000000;
+}
+
+.header-button {
+	padding: 10px 14px;
+	color: var(--button) !important;
+	background-color: white;
+	border-radius: 8px;
+	text-decoration: none !important;
+	text-align: center;
+
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background: var(--primary);
+		outline: 2px solid white;
+		color: white !important;
+	}
+}
+
+@media (max-width: 720px) {
+	.header-button {
+		background: var(--primary);
+		color: white !important;
+		margin-top: 100%;
+
+		position: absolute;
+		bottom: 5em;
+		width: calc(80vw - 4em);
+	}
 }

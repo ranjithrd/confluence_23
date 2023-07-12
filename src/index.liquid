@@ -166,16 +166,16 @@ layout: layout
       .text()
 
     if (window.innerWidth > 720) {
-      document.getElementById("constellations").innerHTML += await (await fetch("/_media/constellations_desktop.svg"))
+      document.getElementById("constellations").innerHTML += await (await fetch("/_media/desktop_svg.svg"))
         .text()
     } else {
-      document.getElementById("constellations").innerHTML += await (await fetch("/_media/constellations_mobile.svg"))
+      document.getElementById("constellations").innerHTML += await (await fetch("/_media/mobile_svg.svg"))
         .text()
     }
 
     for (const a of document.getElementsByTagName("g")) {
       a.onclick = (event) => {
-        window.location.href = "/#" + a.id
+        window.location.href = "/#" + a.id.replace("svg-", "")
       }
     }
 
