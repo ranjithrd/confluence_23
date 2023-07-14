@@ -1,5 +1,5 @@
 // @import "reset.scss";
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=League+Spartan:wght@300;400;500;700;900&display=swap");
 @import "home.scss";
 @import "header.scss";
 @import "footer.scss";
@@ -25,23 +25,37 @@ $primary: white;
 // 	--light-primary: #e9e9e9;
 // }
 
-
 // COLOR SCHEME TWO
 :root {
-	color: #32174D;
-	--dark-primary: #4B2374;
-	--primary: #32174D;
+	color: #32174d;
+	--dark-primary: #4b2374;
+	--primary: #32174d;
 	--button: #240d60;
 	// --button: white;
-	--button-hover: #652E9C;
-	--light-primary: #652E9C;
-	--translucent-primary: rgba(42, 15, 58, 0.5);
+	--button-hover: #652e9c;
+	--light-primary: #652e9c;
+	--translucent-primary: rgba(42, 15, 58, 0.731);
 	--translucent-secondary: rgba(0, 0, 0, 0.25);
-	--bg: #180B26;
+	--bg: #180b26;
+
+	--space-primary: #0b0015;
 }
 
 .dark-primary {
 	background-color: var(--dark-primary);
+}
+
+.space-primary {
+	background-color: var(--space-primary);
+}
+
+.space-primary-transition {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.8) 50%,
+		var(--space-primary) 100%
+	);
 }
 
 .primary {
@@ -53,14 +67,23 @@ $primary: white;
 }
 
 .gradient {
-	background: rgb(2,0,36);
-	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(46,21,74,1) 50%, rgba(50,23,77,1) 100%); 
+	background: rgb(2, 0, 36);
+	// background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(46,21,74,1) 50%, rgba(50,23,77,1) 100%);
+	background: linear-gradient(
+		0deg,
+		rgba(50, 23, 77, 1) 0%,
+		rgba(0, 0, 0, 1) 50%,
+		rgba(0, 0, 0, 1) 100%
+	);
 }
 
 html,
-.inter {
-	font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+.inter,
+button,
+.body {
+	font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+		sans-serif;
 }
 
 h1,
@@ -68,10 +91,14 @@ h2,
 h3,
 h4,
 h5,
-button,
-.barlow {
-	font-family: "League Spartan", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+.barlow,
+.heading {
+	font-family: "Anton", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	text-transform: uppercase;
+	// -webkit-text-fill-color: transparent;
+	// -webkit-text-stroke: 1px;
+	// font-size: 120%;
 }
 
 h4 {
@@ -80,9 +107,11 @@ h4 {
 
 sub {
 	font-size: 1.2em;
+	@extend .body;
 }
 
-p, li {
+p,
+li {
 	font-size: 1.2em;
 }
 
@@ -112,3 +141,8 @@ p {
 .huge {
 	font-size: 2.5em;
 }
+
+// sub {
+// 	font-size: 1.3em;
+// 	@extend .body;
+// }

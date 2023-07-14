@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head id="{{ id }}">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DPS Confluence 2023</title>
+  <title>DPS Confluence 2023 {{ title }}</title>
   <link rel="stylesheet" href="/scss/main.css" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <script src="/anime.min.js"></script>
 </head>
 
-<body>
+<body id="{{ id }}">
   {% include "header.liquid" %}
 
-  <main>{{ content }}
+  <main id="{{ id }}">{{ content }}
   </main>
 
   {% include "footer.liquid" %}
