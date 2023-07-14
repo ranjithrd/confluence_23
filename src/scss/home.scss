@@ -349,15 +349,22 @@ body#home {
 }
 
 .statsGrid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-	h3 {
-		font-size: 2em;
-	}
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 
 	gap: 1em;
 	margin: 2em 0;
+
+	* {
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.statsGrid {
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 720px) {
