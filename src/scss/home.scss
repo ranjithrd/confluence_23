@@ -103,6 +103,10 @@
 	z-index: -1000;
 }
 
+video::-webkit-media-controls-start-playback-button {
+	display: none;
+}
+
 #confluencesub {
 	font-size: 1.4em;
 }
@@ -339,7 +343,8 @@ a.hero {
 	}
 }
 
-html#home, body#home {
+html#home,
+body#home {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
