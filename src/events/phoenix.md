@@ -1,6 +1,6 @@
 ---
 category: math
-short_description: Senior math
+short_description: Senior Math event
 title: Phoenix
 img: https://images.unsplash.com/photo-1509228627152-72ae9ae6848d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hdGh8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days

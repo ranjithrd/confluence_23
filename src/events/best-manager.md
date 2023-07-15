@@ -16,5 +16,5 @@ description: >-
 
   Do you have what it takes?
 rules: \-
-teamsize: 2 members
+teamsize: Solo
 ---

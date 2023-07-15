@@ -17,5 +17,5 @@ rules: |-
   2. Rule two
 
   3. Rule three
-teamsize: 2 or 3 members
+teamsize: 4 to 7 members
 ---

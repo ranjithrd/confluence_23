@@ -1,6 +1,6 @@
 ---
 category: math
-short_description: Senior Math Event
+short_description: Junior Math Event
 title: Cygnus
 img: https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWF0aHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days

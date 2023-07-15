@@ -14,5 +14,5 @@ description: Step into the past and embark on a journey through time at our
   historical escapades where the past comes alive with a touch of whimsy and a
   whole lot of fun.
 rules: \-
-teamsize: 2 members
+teamsize: 3 members
 ---
