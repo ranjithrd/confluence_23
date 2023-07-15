@@ -1,6 +1,6 @@
 ---
 layout: layout
-id: home
+id: video
 ---
 
 <!-- COUNTDOWN -->
@@ -67,13 +67,16 @@ id: home
 
 <div class="hero fullheight" id="confluence-hero">
   <div id="outlinelogo"></div>
+  <h3 id="confluenceintro" class="body">
+    Delhi Public School, Bangalore South Presents
+  </h3>
   <h1 id="confluencetitle">
   </h1>
   <h3 class="body" id="confluencesub">
-    DELHI PUBLIC SCHOOL BANGALORE SOUTH INTERSCHOOL FEST
+    An Inter School Multidisciplinary Fest
   </h3>
   <div class="spacer"></div>
-  <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds</div>
+  <div id="countdowntext" style="margin-top:3px;">0 days 0 hours 0 minutes and 0 seconds</div>
 </div>
 
 
@@ -356,7 +359,13 @@ id: home
     console
       .log("animation")
 
-
+    tl.add({
+      targets: "#confluenceintro",
+      opacity: [0, 1],
+      duration: 300,
+      easing: "easeInOutSine",
+      delay: 500,
+    })
     tl
       .add({
         targets: '#outlinelogo svg path',
@@ -365,7 +374,7 @@ id: home
         ],
         opacity: 1,
         easing: 'easeInOutSine',
-        duration: 450,
+        duration: 300,
         delay: function (el, i) {
           return i * 250 - 1500
         },
@@ -392,7 +401,7 @@ id: home
       })
 
     tl.add({
-      targets: "#confluence-hero h3",
+      targets: "#confluencesub",
       opacity: [0, 1],
       duration: 500,
     })
@@ -400,7 +409,7 @@ id: home
     tl.add({
       targets: "#confluence-hero #countdowntext",
       opacity: [0, 1],
-      duration: 300,
+      duration: 500,
     })
   }
 

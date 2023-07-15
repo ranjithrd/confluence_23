@@ -9,5 +9,5 @@ venue: Athena Block
 description: >-
   Within the realm of possibility, amidst the turbulence of uncertainty, lies the sweet spot where audacity meets action. Embrace the extraordinary, for it is within your grasp. Break free from the shackles of the ordinary and challenge the status quo. Surround yourself with fearless entrepreneurs and visionary thinkers, who will test your limits. The stage is set, the gauntlet is thrown. Will you rise to the occasion and seize greatness?
 rules: \-
-teamsize: 2 members
+teamsize: 3 members
 ---
