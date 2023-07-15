@@ -1,7 +1,7 @@
 {
-  "teachers": [
-  ],
-  "students": [{
+  "teachers": [],
+  "students": [
+    {
       "name": "Amish Prasad",
       "number": "+91 96062 23467"
     },
@@ -10,7 +10,7 @@
       "number": "+91 80733 98263"
     },
     {
-      "name": "Sphoorthi Tembad",
+      "name": "Sphoorti Tembad",
       "number": "+91 96061 00348"
     }
   ],
