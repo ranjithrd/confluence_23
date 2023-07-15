@@ -287,13 +287,14 @@ hr {
 		.event-img {
 			height: 45vh;
 			position: absolute;
-			background-attachment: initial !important;
-			background-position: center !important;
+			// background-attachment: initial !important;
+			// background-position: right !important;
+			background-position-x: 11vw;
 
 			img {
 				object-fit: cover;
 				height: 100%;
-				width: 100%;
+				width: 50%;
 			}
 		}
 
