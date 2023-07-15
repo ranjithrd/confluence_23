@@ -1,42 +1,42 @@
 {
 	"techsprint": {
 		"title": "Techsprint",
-		"logo": "/_media/ts.png",
+		"image": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60",
 		"description": "Techsprint is the IT Council's annual fest"
 	},
 	"sports": {
 		"title": "Sports",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"literary": {
 		"title": "Literature",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"humanities": {
 		"title": "Humanities",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"environment": {
 		"title": "Environment",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"commerce": {
 		"title": "Commerce",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"science": {
 		"title": "Science",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	},
 	"cultural": {
 		"title": "Cultural",
-		"logo": "/",
+		"image": "/",
 		"description": "Description"
 	}
 }

@@ -70,7 +70,7 @@ id: home
   <h1 id="confluencetitle">
   </h1>
   <h3 class="body" id="confluencesub">
-    DPS SOUTH INTERSCHOOL FEST
+    DELHI PUBLIC SCHOOL SOUTH INTERSCHOOL FEST
   </h3>
   <div class="spacer"></div>
   <div id="countdowntext">0 days 0 hours 0 minutes and 0 seconds</div>
@@ -157,6 +157,7 @@ id: home
 {% include 'particles-script' %}
 {% endcomment %}
 
+<!--
 <div id="constellations" class="">
   <div class="center padded-div space-primary-transition">
     <div class="spacer"></div>
@@ -165,6 +166,31 @@ id: home
     <sub>Click on a category to find its events</sub>
   </div>
 </div>
+-->
+
+<div id="constellations">
+  <div class="center padded-div">
+    <h1>Categories</h1>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </div>
+</div>
+<div id="categories">
+  {% for cat in categories %}
+  {% assign events = collections.event | where: 'data.category', cat[0] %}
+  <a class="category" href="/#{{ cat[0] }}">
+    <img src="{{ cat[1].image }}" alt="{{ cat[1].title }} Image" class="category-image">
+    <div class="category-info">
+      <h2>{{ cat[1].title }}</h2>
+      <p>{{ cat[1].description}}</p>
+      <div class="spacer"></div>
+      <u>
+        <p style="font-size: 1.05em;">View <b>{{ events | size }} events →</b></p>
+      </u>
+    </div>
+  </a>
+  {% endfor %}
+</div>
 
 <!--
 <div class="padded-div center primary">
@@ -172,63 +198,69 @@ id: home
 </div>
 -->
 
-<div id="categories" class="space-primary">
+<div id="event-categories" class="">
   {% for cat in categories %}
-
   {% assign events = collections.event | where: 'data.category', cat[0] %}
 
-  <div class="padded-div" id="{{ cat[0] }}">
-    <h1 class="huge">{{ cat[1].title }}</h1>
-    <p>{{ cat[1].description }}</p>
-  </div>
+  <div class="event-category">
+    <div class="padded-div cat-info" id="{{ cat[0] }}">
+      <h1 class="huge">{{ cat[1].title }}</h1>
+      <p>{{ cat[1].description }}</p>
+    </div>
 
-  <div class="events">
-    {% for event in events %}
-    <a href="{{ event.url }}" class="e">
-      <div class="event">
-        {%- comment -%}
-        <div class="event-img">
-          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
-        </div>
-        {%- endcomment -%}
-        <div class="event-img" style="background-image: url('{{ event.data.img }}');">{%- comment -%}
-          <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
-          {%- endcomment -%}
-        </div>
-        {% assign cat = categories[event.data.category] %}
-        <div class="event-info">
-          <h4>{{ cat.title }}</h4>
-          <h2>{{ event.data.title }}
-          </h2>
-          <p>
-            <strong>{{ event.data.dates }}
-              {{ " " }}
-              {%- comment -%}
-              TODO ADD WHEN SCEDULE COMES
-              {%- endcomment -%}
-              {%- comment -%}
-              |
-              {{ event.data.times }}
-              {%- endcomment -%}
-              |
-              {{ event.data.venue }}
-            </strong>
-          </p>
-          <p>
-            {{ event.data.description | markdownify }}
-          </p>
-          <div class="spacer"> </div>
-
-          <div class="event-btns">
-            <button class="primary-button">
-              Learn More
-            </button>
+    <div class="events">
+      {% for event in events %}
+      <a href="{{ event.url }}" class="e">
+        <div class="event">
+          {%- comment -%}
+          <div class="event-img">
+            <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
           </div>
+          {%- endcomment -%}
+          <div class="event-img" style="background-image: url('{{ event.data.img }}');">{%- comment -%}
+            <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
+            {%- endcomment -%}
+          </div>
+          {% assign cat = categories[event.data.category] %}
+          <div class="event-info">
+            <h4>{{ cat.title }}</h4>
+            <div class="event-btns">
+              <h2>{{ event.data.title }}</h2>
+              <button class="primary-button">
+                Read More
+              </button>
+            </div>
 
+            <p>
+              <strong>{{ event.data.teamsize }}
+                {{ " " }}
+                {%- comment -%}
+                TODO ADD WHEN SCEDULE COMES
+                {%- endcomment -%}
+                {%- comment -%}
+                |
+                {{ event.data.times }}
+                {%- endcomment -%}
+                |
+                {{ event.data.grades }}
+                |
+                {{ " " }}
+                {{ event.data.dates }}
+              </strong>
+            </p>
+            <p>
+              {{ event.data.short_description }}
+            </p>
+            <!-- <p>
+              {{ event.data.description | markdownify }}
+            </p> -->
+
+
+          </div>
         </div>
-      </div>
-    </a>
-    {% endfor %}
+      </a>
+      {% endfor %}
+    </div>
   </div>
 
   <div class="spacer"></div>
@@ -236,7 +268,7 @@ id: home
   {% endfor %}
 </div>
 
-<a href="/register" class="hero primary padded-div center">
+<a href="/register" class="hero translucent-primary padded-div center">
   <div class="spacer"></div>
   <div class="spacer"></div>
   <div class="spacer"></div>
@@ -262,6 +294,7 @@ id: home
     document.getElementById("outlinelogo").innerHTML = await (await fetch("/_media/confluence_logo_outline_svg.svg"))
       .text()
 
+    /*
     if (window.innerWidth > 720) {
       document.getElementById("constellations").innerHTML += await (await fetch("/_media/desktop_svg.svg"))
         .text()
@@ -269,6 +302,7 @@ id: home
       document.getElementById("constellations").innerHTML += await (await fetch("/_media/mobile_svg.svg"))
         .text()
     }
+    */
 
     for (const a of document.getElementsByTagName("g")) {
       a.onclick = (event) => {

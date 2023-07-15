@@ -16,6 +16,7 @@ layout: layout
         </a>
         {%- endcomment -%}
       </div>
+      <p>{{ short_description }}</p>
       <div class="spacer"></div>
       <p>
         {%- comment -%}
@@ -27,7 +28,9 @@ layout: layout
         <strong>
           {{ dates }}
           |
-          {{ venue }}
+          {{ grades }}
+          |
+          {{ teamsize }}
         </strong>
       </p>
       <p class="event-desc"> {{ description | markdownify }}
@@ -44,22 +47,36 @@ layout: layout
 <div class="spacer"></div>
 <div class="spacer"></div>
 
-<div class="event-padded">
-  <h3>Rules and Regulations</h3>
-  <div class="spacer"></div>
-  <div class="rules-cont">
-    <div class="rules">
-      <div class="rules-content">
-        {{ rules | mdfy }}
+<div id="rules">
+  <div class="event-padded">
+    <h3>Rules and Regulations</h3>
+    <div class="spacer"></div>
+    <div class="rules-cont">
+      <div class="rules">
+        <div class="rules-content">
+          {{ rules | mdfy }}
+        </div>
       </div>
     </div>
   </div>
+
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+
+  <hr />
 </div>
 
-<div class="spacer"></div>
-<div class="spacer"></div>
+<script>
+  const r = "{{ rules }}"
+  console.log(r)
+  console.log(r == "-")
+  console.log(r.trim() == "-")
+  if (r.trim() == "-") {
+    console.log("true!")
+    document.getElementById("rules").remove()
+  }
+</script>
 
-<hr />
 
 <div class="spacer"></div>
 <div class="spacer"></div>

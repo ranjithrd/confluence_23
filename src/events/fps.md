@@ -1,16 +1,18 @@
 ---
 category: techsprint
+short_description: Gaming event
 title: FPS
 img: https://images.unsplash.com/photo-1639931561959-36ea34c1731f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnBzfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
-dates: TBD
-times: TBD
+dates: 1 day event
+grades: Grades 10 to 12
 venue: Athena Computer Lab
-description: FPS description
-rules: |-
-  1. Rule one
-
-  2. Rule two
-
-  3. Rule three
-teamsize: 4 to 5
+description: FPS, the upcoming valorant gaming event is tailored for adrenaline
+  seekers like you. Enter a world of strategy, precision and teamwork. FPS
+  promises an electric atmosphere pulsating with excitement and fierce
+  competition. This is your chance to show off your skills, make new friends and
+  experience the excitement of esports first hand. Join the FPS and let your
+  gaming skills shine on the big stage. Register now and get ready to make your
+  mark in FPS!
+rules: \-
+teamsize: 5 members
 ---

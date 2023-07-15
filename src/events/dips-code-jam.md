@@ -1,11 +1,11 @@
 ---
 category: techsprint
+short_description: Competitive programming event
 title: Code Jam
 img: /_media/hackathon_picture.png
-dates: TBD
-times: TBD
+dates: 1 day
+grades: Grades 10 to 12
 venue: Offline
-teamsize: 1 to 3
 description: Let your coding skills shine in this offline event! Use logic and
   problem solving to defeat other contestants in this competitive programming
   event.
@@ -35,9 +35,6 @@ rules: >-
      the highest score achieved.
   4. Participants are ranked by score. If two or more participants achieve the same score, then the tie is
      broken by the total time taken to submit the last solution.
-organizers:
-  - name: Sumukh Prasad
-    desc: Event Head
-    phone: +91 90190 23605
-    img: /_media/default_user.png
+organizers: []
+teamsize: Solo
 ---

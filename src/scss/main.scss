@@ -28,8 +28,9 @@ $primary: white;
 // COLOR SCHEME TWO
 :root {
 	color: #32174d;
-	--dark-primary: #4b2374;
-	--primary: #32174d;
+	--dark-primary: rgb(75, 35, 116);
+	--dark-primary-values: 75, 35, 116;
+	--primary: rgb(50, 23, 77);
 	--button: #240d60;
 	// --button: white;
 	--button-hover: #652e9c;
@@ -39,6 +40,14 @@ $primary: white;
 	--bg: #180b26;
 
 	--space-primary: #0b0015;
+}
+
+.translucent-primary {
+	background-color: var(--translucent-primary);
+}
+
+.translucent-secondary {
+	background-color: var(--translucent-secondary);
 }
 
 .dark-primary {
@@ -96,6 +105,7 @@ h5,
 	font-family: "Anton", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	text-transform: uppercase;
+	letter-spacing: 2.5px;
 	// -webkit-text-fill-color: transparent;
 	// -webkit-text-stroke: 1px;
 	// font-size: 120%;
