@@ -1,42 +1,47 @@
 {
+	"science": {
+		"title": "Science",
+		"image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFifGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60",
+		"description": "Description"
+	},
+	"math": {
+		"title": "Math",
+		"image": "https://images.unsplash.com/photo-1453733190371-0a9bedd82893?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWF0aHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60",
+		"description": "Description"
+	},
+	"commerce": {
+		"title": "Commerce",
+		"image": "https://images.unsplash.com/photo-1610456071663-0b40faa11c85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJpZWZjYXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60",
+		"description": "Description"
+	},
+	"humanities": {
+		"title": "Humanities",
+		"image": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
+		"description": "Description"
+	},
 	"techsprint": {
 		"title": "Techsprint",
 		"image": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60",
 		"description": "Techsprint is the IT Council's annual fest"
 	},
-	"sports": {
-		"title": "Sports",
-		"image": "/",
-		"description": "Description"
-	},
 	"literary": {
 		"title": "Literature",
-		"image": "/",
-		"description": "Description"
-	},
-	"humanities": {
-		"title": "Humanities",
-		"image": "/",
-		"description": "Description"
-	},
-	"environment": {
-		"title": "Environment",
-		"image": "/",
-		"description": "Description"
-	},
-	"commerce": {
-		"title": "Commerce",
-		"image": "/",
-		"description": "Description"
-	},
-	"science": {
-		"title": "Science",
-		"image": "/",
+		"image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d3JpdGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60",
 		"description": "Description"
 	},
 	"cultural": {
 		"title": "Cultural",
-		"image": "/",
+		"image": "https://images.unsplash.com/photo-1630050525402-06c617847d27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZHJhbWF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
 		"description": "Description"
+	},
+	"environment": {
+		"title": "Environment",
+		"image": "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZW52aXJvbm1lbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60",
+		"description": "Description"
+	},
+	"sports": {
+		"title": "Sports",
+		"image": "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c3BvcnRzfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60",
+		"description": "Sports description"
 	}
 }
