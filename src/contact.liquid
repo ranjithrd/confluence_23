@@ -2,26 +2,32 @@
 layout: layout
 ---
 
-<div class="hero">
+<div class="hero center">
   <h1>Contact</h1>
   <!-- <p>Call organizers with the phone numbers below or make enquiries with the form.</p> -->
 
   <div class="spacer"></div>
 
   <div class="columns">
+    {%comment%}
     {% include "contact-column.liquid", title: "Teachers", contacts:
-  		contacts.teachers %}
+    contacts.teachers %}
+    {%endcomment%}
 
     <!--  -->
 
     {% include "contact-column.liquid", title: "Student Coordinators",
-  		contacts: contacts.students %}
+    contacts: contacts.students %}
 
     <!--  -->
 
-    {% include "contact-column.liquid", title: "Event Coordinators",
-  		contacts: contacts.event %}
+    {% include "contact-column.liquid", title: "Sports Coordinators",
+    contacts: contacts.event %}
   </div>
+
+  <div class="spacer"></div>
+
+  <h3>Or email us at <a href="mailto:dips.confluence@gmail.com">dips.confluence@gmail.com</a></h3>
 </div>
 
 <form class="contact-form" action="https://usebasin.com/f/c0ec46460f89" method="POST">
@@ -30,12 +36,12 @@ layout: layout
   <div class="two-col">
     <div class="input">
       <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
     </div>
 
     <div class="input">
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
     </div>
   </div>
 

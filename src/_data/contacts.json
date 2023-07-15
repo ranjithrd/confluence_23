@@ -1,19 +1,35 @@
 {
   "teachers": [
-    {
-      "name": "Teacher 0",
-      "number": "+00 00000 00000"
-    }
   ],
   "students": [{
-      "name": "Zaid Mallik",
-      "number": "+91 99805 69115"
+      "name": "Amish Prasad",
+      "number": "+91 96062 23467"
+    },
+    {
+      "name": "Vrinda Mehra",
+      "number": "+91 80733 98263"
+    },
+    {
+      "name": "Sphoorthi Tembad",
+      "number": "+91 96061 00348"
     }
   ],
   "event": [
     {
-      "name": "Event Head 0",
-      "number": "+00 00000 00000"
+      "name": "Milind Sahoo",
+      "number": "+91 98860 26387"
+    },
+    {
+      "name": "Hriday Bhutada",
+      "number": "+91 93803 30127"
+    },
+    {
+      "name": "Dhrithi Patel",
+      "number": "+91 63631 45506"
+    },
+    {
+      "name": "Harshita Y",
+      "number": "+91 95910 39749"
     }
   ]
 }
