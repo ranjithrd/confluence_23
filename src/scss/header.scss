@@ -157,13 +157,21 @@ main {
 	}
 }
 
-// MENU ANIMATION
-.visible {
-	animation: menuAnimation forwards 300ms ease-in-out;
+@media (min-width: 721px) {
+	.invisible {
+		display: none;
+	}
 }
 
-.invisible {
-	animation: closeMenuAnimation forwards 300ms ease-in-out;
+// MENU ANIMATION
+@media (max-width: 720px) {
+	.visible {
+		animation: menuAnimation forwards 300ms ease-in-out;
+	}
+	
+	.invisible {
+		animation: closeMenuAnimation forwards 300ms ease-in-out;
+	}
 }
 
 @keyframes menuAnimation {

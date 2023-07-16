@@ -76,6 +76,7 @@
   }
 
   function rotateButton(e) {
+    document.getElementById("ev_popup").style.display = "flex"
     document
       .getElementById("dropdownButton")
       .classList
@@ -100,11 +101,13 @@
       .getElementById("dropdownButton")
       .classList
       .add("rotateUp")
-
     document
       .getElementById("ev_popup")
       .classList
       .remove("popupVisible")
+    setTimeout(() => {
+      document.getElementById("ev_popup").style.display = "none"
+    }, 320)
   }</script>
 
 <link rel="stylesheet"
