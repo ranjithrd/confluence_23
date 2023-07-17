@@ -7,10 +7,16 @@ dates: 1 day
 grades: Grades 8 and 9
 venue: Bia Block
 description: Immerse yourself in a world of creativity, imagination, and
-  aesthetic wonder. Bring yoru very own fantasies to life. Step into a realm of
-  your very own creation. Each piece is a testament to boundless creativity of
-  the human mind. Join us to create artistic masterpieces that will inspire and
-  leave people in awe.
-rules: \-
-teamsize: Solo
+  aesthetic wonder. Bring your very own fantasies to life. Step into a realm of
+  your very own creation. Each piece is a testament to the boundless creativity
+  of the human mind. Join us to create artistic masterpieces that will inspire
+  and leave people in awe.
+rules: >-
+  * Participants should bring their own supplies - color pencils, sketch pens,
+  brush pens, crayons, oil pastels, shading pencils, etc.
+
+  * No paints allowed.
+
+  * Theme will be given on the day itself.
+teamsize: Individual
 ---

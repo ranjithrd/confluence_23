@@ -6,7 +6,15 @@ img: https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3
 dates: 1 day (online)
 grades: Grades 10 to 12
 venue: Online
-description: Video Editing description
+description: >-
+  Visual Vortex, where imagination meets technology, where the boundaries of
+  visual manipulation are pushed, and extraordinary edits take center stage.
+
+
+  Whether it's breathtaking visuals, seamless transitions, or innovative storytelling techniques, Visual Vortex provides an exciting opportunity for video editors to demonstrate their mastery and be recognized for their exceptional work.
+
+
+  **This event will be held online.**
 rules: \-
-teamsize: Solo
+teamsize: Individual
 ---

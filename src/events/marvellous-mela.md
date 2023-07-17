@@ -12,10 +12,9 @@ description: >-
 
   A clash of wit against rivalling wit, spanning across subjects of the past, present and the future. A thrilling and adrenaline-rush inducing experience where you and your companions will have to make your way through swarming crowds of challengers of equally high acumen and retain your spot at the precarious peak. Use your intellect to take the entire world by storm and let no one, traveller, noble or otherwise, be unaware of your name and your talent. Pay heed to your intuition and tread carefully, or you may just find yourself lost in the bustling fair.
 rules: >-
-  No use of devices (mobile phones, laptops, smartwatches, etc) or external
-  sources is allowed to answer questions. 
+  * No use of devices (mobile phones, laptops, smartwatches, etc) or external
+  sources is allowed to answer questions.
 
-
-  If a team is found to be cheating, they will be disqualified immediately.
-teamsize: 3 members
+  * If a team is found to be cheating, they will be disqualified immediately.
+teamsize: 3 participants
 ---

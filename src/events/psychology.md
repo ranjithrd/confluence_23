@@ -13,6 +13,9 @@ description: >-
 
 
   Among the many mysteries riddled in the world are those which reside in the mind. The pendulum of the mind alternates between sense and nonsense. Eridanus will make you challenge your ideals, broaden your vision and decipher the unknown. Enter the world of psychology to become a part of this thrilling experience. Do you have what it takes to look beyond the obvious, adopt a new perspective and discover the hidden truths?
-rules: \-
-teamsize: 2 members
+rules: |-
+  * Participants are requested to bring their own stationery.
+  * Basic psychology knowledge will be helpful.
+  * Participants are not allowed to use phones or laptops during the event.
+teamsize: 2 participants
 ---

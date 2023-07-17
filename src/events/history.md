@@ -10,9 +10,9 @@ description: Step into the past and embark on a journey through time at our
   exhilarating history event as we blend education and entertainment into a
   thrilling experience. Immerse yourself in captivating events and witness
   awe-inspiring reenactments of key historical moments. This event promises a
-  plethora of adventures filled with laughter and learning. Join us for a day of
-  historical escapades where the past comes alive with a touch of whimsy and a
-  whole lot of fun.
-rules: \-
-teamsize: 3 members
+  plethora of adventures filled with laughter and learning. Join us for two days
+  of historical escapades where the past comes alive with a touch of whimsy and
+  a whole lot of fun.
+rules: "* Teams need to have a minimum of 1 laptop."
+teamsize: 3 participants
 ---

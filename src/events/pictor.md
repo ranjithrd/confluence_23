@@ -14,6 +14,10 @@ description: Get ready to unleash your artistic prowess and innovative spirit in
   chance to demonstrate your unique style, conceptual thinking, and
   problem-solving skills as you tackle exciting challenges. Are you willing to
   accept this challenge?
-rules: \-
-teamsize: 2 members
+rules: >-
+  * Each team must have at least one laptop/iPad, cell phone, A3 sheet,
+  stationery (colour pencils, sketch pens, etc), sketch book.
+
+  * Designs can be hand drawn or digital according to the round.
+teamsize: 2 participants
 ---

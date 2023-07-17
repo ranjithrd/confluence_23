@@ -8,7 +8,7 @@ grades: Grades 10 to 12
 venue: Bia Block
 description: Embark on an exhilarating journey of intellectual exploration as
   students from diverse backgrounds converge in a captivating competition
-  centered on the sustainable development goals (SDGs). This transformative
+  centered on the Sustainable Development Goals (SDGs). This transformative
   arena serves as a catalyst for young minds to unleash their innovative spirits
   and forge visionary solutions that tackle pressing global challenges. With
   passion and conviction, students channel their creativity to address the
@@ -20,10 +20,10 @@ description: Embark on an exhilarating journey of intellectual exploration as
   thriving reality, leaving an indelible mark on humanity's journey toward a
   sustainable and equitable world.
 rules: >-
-  * No electronic gadgets are required
+  * No electronic gadgets are required.
 
-  * Extra materials will be required for day 2. Qualifying groups will be informed of it towards the end of day 1
+  * Extra materials will be required for day 2, the qualifying groups will be informed of it towards the end of day 1.
 
-  * A notebook and pen to be carried
-teamsize: 2 members
+  * A notebook and pen to be carried.
+teamsize: 2 participants
 ---

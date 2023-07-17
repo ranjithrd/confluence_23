@@ -7,26 +7,26 @@ dates: 2 days
 grades: Grades 10 to 12
 venue: Athena Block
 description: >-
-  Chaos has ensued and the world now needs your aid!! A deadly pathogen has
-  caused an outbreak of a life- threatening disease and you must uncover the
+  Chaos has ensued and the world now needs your aid! A deadly pathogen has
+  caused an outbreak of a life-threatening disease and you must uncover the
   truth. 
 
 
-  Unleash your untapped powers of deduction and traverse a labyrinth of secrets, following elusive trails that lead to a shattering revelation. Brace yourself for an electrifying pursuit, employing blood testing, dna decryption, gel electrophoresis, and more. With time slipping away, only the sharpest minds can out maneuver the rest, saving themselves and the rest of humanity. 
+  Unleash your untapped powers of deduction and traverse a labyrinth of secrets, following elusive trails that lead to a shattering revelation. Brace yourself for an electrifying pursuit, employing blood testing, DNA decryption, gel electrophoresis, and more. With time slipping away, only the sharpest minds can out manoeuvre the rest, saving themselves and the rest of humanity. 
 
 
   The burning question echoes: will you surrender to the thrill and do whatever it takes to unveil the imposter?
 rules: >-
-  - Each team must carry a laptop, ipad, or phone with a dongle or good mobile
+  - Each team must carry a laptop, iPad, or phone with a dongle or good mobile
   hotspot for the event. 
 
 
-  - Students will not be allowed to use google unless directed to do so by the event heads. 
+  - Students will not be allowed to access any search engine unless directed to do so by the event heads. 
 
 
-  - Cheating will not be tolerated and the team will be disqualified immediately if caught. 
+  - Unethical approaches will not be tolerated and the team will be disqualified immediately. 
 
 
   - Students will be required to carry lab coats with them along with basic stationary.
-teamsize: 2 members
+teamsize: 2 participants
 ---

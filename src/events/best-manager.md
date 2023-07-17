@@ -15,6 +15,6 @@ description: >-
 
 
   Do you have what it takes?
-rules: \-
-teamsize: Solo
+rules: "* The participants must have their own laptops and phones."
+teamsize: Individual
 ---

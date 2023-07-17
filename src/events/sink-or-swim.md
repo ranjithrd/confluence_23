@@ -15,12 +15,12 @@ description: A voyage into the unknown necessitates the possession of valor,
   through, broken and battered?
 rules: >-
   * Teams must bring their own writing tools, only paper will be provided to
-  them
+  them.
 
-  * Plagiarism will not be tolerated and will lead to immediate disqualification
+  * Plagiarism will not be tolerated and will lead to immediate disqualification.
 
-  * Use of devices (mobile phones, laptops, smartwatches, etc) or any external sources is **not** allowed
+  * No use of devices (mobile phones, laptops, smartwatches, etc) or any external sources is allowed.
 
-  * If a team is found cheating, using chatbots or copying from other teams, they will be disqualified immediately
-teamsize: 4 members
+  * If a team is found cheating, utilising chatbots or copying from other teams, they will be disqualified immediately.
+teamsize: 4 participants
 ---

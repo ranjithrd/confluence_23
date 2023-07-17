@@ -1,16 +1,21 @@
 ---
 category: techsprint
 short_description: Competitive programming event
-title: Code Jam
+title: CodeJam
 img: /_media/hackathon_picture.png
 dates: 1 day
 grades: Grades 10 to 12
 venue: Offline
-description: Let your coding skills shine in this offline event! Use logic and
-  problem solving to defeat other contestants in this competitive programming
-  event.
+description: >-
+  Join us at CodeJam, the premier championship that brings together the world's
+  most talented programmers for an exhilarating display of skill, ingenuity, and
+  competitive spirit. Prepare to embark on an unforgettable journey, where
+  coding prowess meets intense challenges.
+
+
+  In this adrenaline-fueled contest, participants showcase their problem-solving abilities, algorithmic thinking, and expertise in multiple programming languages. With limited time and a series of complex problems to crack, they push the boundaries of their knowledge and creativity, crafting elegant solutions that optimize performance.
 rules: >-
-  ### **Rules**
+  #### Rules
 
 
   1. Contestants will be required to solve questions and provide code that can be verified.
@@ -24,7 +29,7 @@ rules: >-
   5. This is an **individual** event. No teams allowed.
 
 
-  ### Scoring
+  #### Scoring
 
 
   1. Each challenge has a pre-determined score.
@@ -36,5 +41,5 @@ rules: >-
   4. Participants are ranked by score. If two or more participants achieve the same score, then the tie is
      broken by the total time taken to submit the last solution.
 organizers: []
-teamsize: Solo
+teamsize: Individual
 ---

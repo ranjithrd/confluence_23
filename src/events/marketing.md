@@ -14,6 +14,6 @@ description: Step into a world where creativity reigns supreme and boundaries
   realms of marketing excellence. So, gear up for this transformative journey,
   where possibilities know no limits and the path to success reveals itself in
   mysterious ways.
-rules: Each team must have atleast one laptop.
-teamsize: 2 members
+rules: "* Each team must have at least one laptop."
+teamsize: 2 participants
 ---

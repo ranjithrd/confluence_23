@@ -7,13 +7,13 @@ dates: 2 days
 grades: Grades 10 to 12
 venue: Athena Block
 description: >-
-  Welcome to aquarius, an experience of a lifetime for lovers of chemistry. Get
+  Welcome to Aquarius, an experience of a lifetime for lovers of chemistry. Get
   ready for a series of exhilarating experiences. From the streets of Mexico's
-  cracolandia and the depths of the pacific ocean to the pits of the internet!
+  Crâcolandia and the depths of the pacific ocean to the pits of the internet!
   Are you ready for an adventure? 
 
 
   Do you have what it takes to survive, and trump all the challenges the world of chemistry has to offer?
-rules: Each team must have fully charged phones with good internet access.
-teamsize: 2 members
+rules: "* Each team must have fully charged phones with good internet access."
+teamsize: 2 participants
 ---

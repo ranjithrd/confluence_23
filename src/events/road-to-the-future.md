@@ -19,10 +19,10 @@ description: Step into the realm of boundless imagination and ecological
   cities that thrive in harmony with the environment, fostering a sustainable
   legacy for generations to come.
 rules: >-
-  * Each tema must have atleast **one** laptop.
+  * Each team must have atleast **one** laptop.
 
-  * Extra materials will be required for day 2. Qualifying teams will be informed towards the end of day 1.
+  * Extra materials will be required for day 2. The qualified groups will be informed of it towards the end of day 1.
 
   * Notebook and pen to be carried.
-teamsize: 2 or 3 members
+teamsize: 2 or 3 participants
 ---
