@@ -14,13 +14,6 @@ id: video
   <div class="spacer"></div>
 
   <div class="columns">
-    {%comment%}
-    {% include "contact-column.liquid", title: "Teachers", contacts:
-    contacts.teachers %}
-    {%endcomment%}
-
-    <!--  -->
-
     {% include "contact-column.liquid", title: "Student Coordinators",
     contacts: contacts.students %}
 
@@ -28,6 +21,11 @@ id: video
 
     {% include "contact-column.liquid", title: "Sports Coordinators",
     contacts: contacts.event %}
+
+    <!-- -->
+
+    {% include "contact-column.liquid", title: "Teachers", contacts:
+    contacts.teachers %}
   </div>
 
 

@@ -11,6 +11,7 @@ id: video
   <!-- <img src="{{ img }}" alt="{{ title }}" /> -->
   <div class="event-hero">
     <div class="hero-content">
+      {% assign cat = categories[category] %}
       <div class="title-section">
         <h1>
           {{ title }}
@@ -40,6 +41,13 @@ id: video
       </p>
       <p class="event-desc"> {{ description | markdownify }}
       </p>
+      <div class="spacer"></div>
+      <p class="backlink heading">
+        <a href="/{{ category }}" class="underline">Other {{ cat.title }} events</a>
+        {{" "}} | {{" "}}
+        <a href="/#categories" class="">All Categories</a>
+      </p>
+      <div class="spacer"></div>
     </div>
   </div>
 </div>

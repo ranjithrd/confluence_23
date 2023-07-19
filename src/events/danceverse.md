@@ -6,11 +6,18 @@ img: https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?ixlib=rb-4.0.3
 dates: 1 day
 grades: Grades 8 and 9
 venue: Bia Block
-description: Get ready to create a rhythmic revolution of dance styles. Brace
-  yourself for a high-energy event to leave your mark and inspire everyone to
-  hit the dance floor. Immerse yourself in waves of nostalgia as you twirl
-  through the decades of iconic choreographies. Be a part of an unforgettable
-  dance extravaganza.
+description: >-
+  Get ready to witness a dance extravaganza like never before! Presenting
+  "Orion", where talent meets passion, and the stage becomes a battleground.
+  Join us for an electrifying mix of beats, passion, and movement. Unleash your
+  creativity, showcase your incredible moves, and light the stage on fire. This
+  immersive dance event promises to be a celebration of diverse cultures, music,
+  and the art of dance, taking you on a thrilling journey through various
+  decades. Whether you're a seasoned dancer or someone who just loves to move to
+  the beat, this event has something special in store for everyone.
+
+
+  Theme for the final round: **Dances through the Decades**.
 rules: >-
   * For the final event, the dance choreography has to be original. Plagiarism
   will not be allowed.

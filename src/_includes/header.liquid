@@ -14,7 +14,7 @@
     <a href="/about">About</a>
     {%- endcomment -%}
     <!-- <a href="/team">Team</a> -->
-    <a href="/brochure">Brochure</a>
+    <a href="/brochure" target="_blank">Brochure</a>
     <a href="/guidelines">Guidelines</a>
     <a href="/contact">Contact</a>
     <div onclick="rotate()" class="eventsButton">
@@ -27,7 +27,7 @@
     </div>
     <div id="ev_popup">
       {% for cat in categories %}
-      <a href="/#{{ cat[0] }}">{{ cat[1].title }}
+      <a href="/{{ cat[0] }}">{{ cat[1].title }}
       </a>
       {% endfor %}
     </div>

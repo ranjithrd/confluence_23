@@ -12,7 +12,10 @@ description: FPS, the upcoming Valorant gaming event is tailored for adrenaline
   skills, make new friends, and experience the excitement of E-Sports firsthand.
   Join the FPS and let your gaming skills shine on the big stage. Register now
   and get ready to make your mark in FPS!
-rules: Participants will be required to carry peripherals (mouse, keyboard, and
-  headphones).
+rules: >-
+  * Participants will be required to carry peripherals (mouse, keyboard, and
+  headphones), and are required to bring their own headsets.
+
+  * Use of unparliamentary language will lead to immediate disqualification.
 teamsize: 5 participants
 ---

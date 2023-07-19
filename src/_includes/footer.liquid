@@ -7,20 +7,22 @@
         <a href="/contact">Contact</a>
         <a href="/register">Register</a>
         <a href="/guidelines">Guidelines</a>
-        <a href="/brochure">Brochure</a>
+        <a href="/brochure" target="_blank">Brochure</a>
       </div>
       <div class="col">
         <a href="https://www.instagram.com/confluence2023/">Instagram</a>
         <a href="https://south.dpsbangalore.edu.in/">DPS Bangalore South</a>
         <a href="https://goo.gl/maps/SXHFwYHsWnnVyCSE9">Google Maps</a>
       </div>
+      {%comment%}
       <div class="col">
         <h4>Categories</h4>
         {% for cat in categories %}
-        <a href="/#{{ cat[0] }}">{{ cat[1].title }}
+        <a href="/{{ cat[0] }}">{{ cat[1].title }}
         </a>
         {% endfor %}
       </div>
+      {%endcomment %}
     </div>
   </div>
   <div class="spacer"></div>

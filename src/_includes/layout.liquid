@@ -18,6 +18,13 @@
   <main id="{{ id }}">{{ content }}
   </main>
 
+  <script>
+    if (document.body.id == "video") {
+      document.body.innerHTML += `
+      <img src="/_media/nebula_720.png" id="confluence-hero-video-fallback">
+      `
+    }
+  </script>
   {% include "footer.liquid" %}
 </body>
 

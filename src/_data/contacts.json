@@ -1,35 +1,48 @@
 {
-  "teachers": [],
-  "students": [
-    {
-      "name": "Amish Prasad",
-      "number": "+91 96062 23467"
-    },
-    {
-      "name": "Vrinda Mehra",
-      "number": "+91 80733 98263"
-    },
-    {
-      "name": "Sphoorti Tembad",
-      "number": "+91 96061 00348"
-    }
-  ],
-  "event": [
-    {
-      "name": "Milind Sahoo",
-      "number": "+91 98860 26387"
-    },
-    {
-      "name": "Hriday Bhutada",
-      "number": "+91 93803 30127"
-    },
-    {
-      "name": "Drithi Patel",
-      "number": "+91 63631 45506"
-    },
-    {
-      "name": "Harshita Y",
-      "number": "+91 95910 39749"
-    }
-  ]
+	"teachers": [
+		{
+			"name": "Rima Ghosh",
+			"number": "+91 80739 95230"
+		},
+		{
+			"name": "Ranjitha",
+			"number": "+91 72594 40061"
+		}
+	],
+	"students": [
+		{
+			"name": "Amish Prasad",
+			"number": "+91 96062 23467"
+		},
+		{
+			"name": "Vrinda Mehra",
+			"number": "+91 80733 98263"
+		},
+		{
+			"name": "Sphoorti Tembad",
+			"number": "+91 96061 00348"
+		},
+		{
+			"name": "Mohammed Aayan Khan",
+			"number": "+91 12345 67890"
+		}
+	],
+	"event": [
+		{
+			"name": "Milind Sahoo",
+			"number": "+91 98860 26387"
+		},
+		{
+			"name": "Hriday Bhutada",
+			"number": "+91 93803 30127"
+		},
+		{
+			"name": "Drithi Patel",
+			"number": "+91 63631 45506"
+		},
+		{
+			"name": "Harshita Y",
+			"number": "+91 95910 39749"
+		}
+	]
 }

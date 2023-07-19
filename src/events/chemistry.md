@@ -14,6 +14,11 @@ description: >-
 
 
   Do you have what it takes to survive, and trump all the challenges the world of chemistry has to offer?
-rules: "* Each team must have fully charged phones with good internet access."
+rules: >-
+  * Each team must have fully charged phones and at least one laptop with good
+  internet access.
+
+
+  * Students will be required to carry lab coats with them along with basic stationery.
 teamsize: 2 participants
 ---

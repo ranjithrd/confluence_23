@@ -15,7 +15,7 @@ description: Welcome to the electrifying world of moot court, where legal minds
   participants navigate a labyrinth of case law with precision. It's a
   high-stakes theater of law, where young advocates strive to showcase their
   legal prowess and ignite the flames of justice. Brace yourselves for the
-  adrenaline rush, as moot court unleashes a display of legal brilliance!
+  adrenaline rush, as Columba unleashes a display of legal brilliance!
 rules: >-
   * Each team must have a minimum of 1 laptop.
 

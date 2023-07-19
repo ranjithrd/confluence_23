@@ -17,6 +17,6 @@ rules: >-
 
   * No paints allowed.
 
-  * Theme will be given on the day itself.
+  * The theme will be given on the day itself.
 teamsize: Individual
 ---

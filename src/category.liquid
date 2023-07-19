@@ -1,0 +1,85 @@
+---
+layout: layout
+pagination: {data: categories, size: 1, alias: category}
+permalink: "/{{ category | slugify }}/"
+---
+
+<div class="hero padded-div center">
+    <h1 class="huge">{{ title }}</h1>
+</div>
+
+{% assign events = collections.event | where: 'data.category', category %}
+{% assign cat = categories[category] %}
+
+<script>
+    console.log(JSON.stringify("{{ cat }}"))
+    console.log(JSON.stringify("{{ category }}"))
+    console.log(JSON.stringify("{{ categories }}"))
+    console.log(JSON.stringify("{{ categories[category].title }}"))
+</script>
+
+<div class="event-category">
+    <div class="padded-div cat-info">
+        <a href="/#categories" class="backlink heading">
+            ← Other categories
+        </a>
+        <h1 class="huge" style="font-size: 3.5em;">{{ cat.title }}</h1>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="events">
+        {% for event in events %}
+        <a href="{{ event.url }}" class="e">
+            <div class="event">
+                {%- comment -%}
+                <div class="event-img">
+                    <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
+                </div>
+                {%- endcomment -%}
+                <div class="event-img" style="background-image: url('{{ event.data.img }}');">{%- comment -%}
+                    <img src="{{ event.data.img }}" alt="{{ event.data.title }} image" />
+                    {%- endcomment -%}
+                </div>
+                {% assign cat = categories[event.data.category] %}
+                <div class="event-info">
+                    <h4>{{ cat.title }}</h4>
+                    <div class="event-btns">
+                        <h2>{{ event.data.title }}</h2>
+                        <button class="primary-button">
+                            Read More
+                        </button>
+                    </div>
+
+                    <p>
+                        <strong>{{ event.data.teamsize }}
+                            {{ " " }}
+                            {%- comment -%}
+                            TODO ADD WHEN SCEDULE COMES
+                            {%- endcomment -%}
+                            {%- comment -%}
+                            |
+                            {{ event.data.times }}
+                            {%- endcomment -%}
+                            |
+                            {{ event.data.grades }}
+                            |
+                            {{ " " }}
+                            {{ event.data.dates }}
+                        </strong>
+                    </p>
+                    <p>
+                        {{ event.data.short_description }}
+                    </p>
+                    <!-- <p>
+              {{ event.data.description | markdownify }}
+            </p> -->
+
+
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+
+        <p class="backlink underline"><a href="/#categories">View other categories</a></p>
+    </div>
+</div>

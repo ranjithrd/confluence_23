@@ -12,9 +12,18 @@ description: >-
 
 
   Whether it's breathtaking visuals, seamless transitions, or innovative storytelling techniques, Visual Vortex provides an exciting opportunity for video editors to demonstrate their mastery and be recognized for their exceptional work.
+rules: >-
+  * **This is an online event.**
 
+  * The competition will be a 30-second product commercial.
 
-  **This event will be held online.**
-rules: \-
+  * Participants must strictly adhere to the given time limit of 30 seconds. Entries exceeding this limit will result in disqualification.
+
+  * Video submissions must be in standard MP4 format and should be uploaded to a designated platform.
+
+  * Participants will be given a product on which they have to create a product commercial.\
+    Stock footage can be used.\
+    Contestants have creative freedom for transitioning, storytelling, and personalized elements. However, contestants must be aware of copyright policies if stock footage is being used.
+  * Participants must submit their video by **6:00PM**.
 teamsize: Individual
 ---

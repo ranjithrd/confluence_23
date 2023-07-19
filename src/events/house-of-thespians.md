@@ -6,14 +6,18 @@ img: https://images.unsplash.com/photo-1611673982064-7385a5d9574e?ixlib=rb-4.0.3
 dates: 2 days
 grades: Grades 10 to 12
 venue: Bia Block
-description: You've all heard the saying "actions speak louder than words", it's
-  now your chance to showcase what you're made up of. Get ready to be
-  transported to a realm of imagination and emotion, where dreams come alive and
-  stories unfold before your eyes. Presenting “Alphecca'' an event that will
-  leave you spellbound. Embark on an exhilarating journey of artistic
-  expression, drawing inspiration from Charlie Chaplin, Marilyn Monroe, and
-  other legends. Don't let this extraordinary opportunity pass you by! Let your
-  talent shine and let the stage become your canvas.
+description: >-
+  You've all heard the saying "actions speak louder than words", it's now your
+  chance to showcase what you're made up of. Get ready to be transported to a
+  realm of imagination and emotion, where dreams come alive and stories unfold
+  before your eyes. Presenting “Alphecca'' an event that will leave you
+  spellbound. Embark on an exhilarating journey of artistic expression, drawing
+  inspiration from Charlie Chaplin, Marilyn Monroe, and other legends. Don't let
+  this extraordinary opportunity pass you by! Let your talent shine and let the
+  stage become your canvas.
+
+
+  Theme for the finals: **Mythological Drama**.
 rules: |-
   * Outfits should be appropriate.
   * Inappropriate dramas will be disqualified.

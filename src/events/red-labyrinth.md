@@ -20,6 +20,8 @@ description: >-
 
 
   The maze awaits you; the choice to conquer it is yours.
-rules: \-
+rules: |-
+  * Use of unparliamentary langauge will lead to immediate disqualification.
+  * Sharing of flags will lead to immediate disqualification.
 teamsize: 2 teams from a school | 2 participants
 ---

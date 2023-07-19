@@ -7,13 +7,15 @@ dates: 2 days
 grades: Grades 10 to 12
 venue: Eleos Block
 description: >-
-  A derivative of air crash.
+  The magnificent Harmatia in all of its luxurious glory, with its panoramic
+  promenades and its endless buffet lines, suffers an engine failure and all but
+  one lifeboat are wrecked by the damage. This is where you play your part.
 
 
-  A scene set perfectly: the haute monde on the magnificent Hamartia, a cruise ship with an endless buffet line and a stunning promenade. 
+  As a renowned personality, it's time for you to put that persuasive expertise to use and suade the others that you are entitled to the remaining lifeboat. The cruciality of cogency cannot be minimised.
 
 
-  The scene shatters: calamity crops up when the vessel suffers an engine failure and all but one lifeboat remains undamaged. Now, it’s everyone for themselves and true colours start to show. Can you persuade your way to survival or will your voice sink to the depths, soundless?
+  Can you wheedle your way to survival or will your voice sink to the depths, soundless?
 rules: |-
   * Teams must bring their own props for the final round.
   * Adherence to time limits will be strictly administered.

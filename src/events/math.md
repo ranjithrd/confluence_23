@@ -8,12 +8,11 @@ grades: Grades 8 and 9
 venue: Eleos Block
 description: >-
   This event will put you to a test against time. The innovative and
-  out-of-the-box maths problems, along with time constraints is going to put
-  participants from grades 8 and 9 through a lot of exciting and nerve-wracking
-  moments. This thrilling event promises to challenge your mathematical skills
-  and ignite your passion for problem-solving. Be ready to be on a journey with
-  time, maths, and most importantly, yourself. Get ready to beat all odds and
-  embark on a journey of mathematical discovery.
+  out-of-the-box maths problems, along with time constraints is going to put the
+  prodigies through a lot of exciting and nerve-wracking moments. This thrilling
+  event promises to challenge your mathematical skills and ignite your passion
+  for problem-solving. Get ready to beat all odds and embark on a journey of
+  mathematical discovery.
 
 
   Caution: Made only for math lovers :)
