@@ -12,6 +12,7 @@ id: video
   <div class="event-hero">
     <div class="hero-content">
       {% assign cat = categories[category] %}
+      <h4 class="heading">{{ cat.title }} EVENT</h4>
       <div class="title-section">
         <h1>
           {{ title }}
@@ -22,7 +23,9 @@ id: video
         </a>
         {%- endcomment -%}
       </div>
+      {%comment%}
       <p>{{ short_description }}</p>
+      {%endcomment%}
       <div class="spacer"></div>
       <p>
         {%- comment -%}
