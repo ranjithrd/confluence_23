@@ -346,8 +346,9 @@ id: video
 
   async function main() {
     console.log("main()")
-    document.getElementById("outlinelogo").innerHTML = await (await fetch("/_media/confluence_logo_outline_svg.svg"))
-      .text()
+    const svgData = await (await fetch("/_media/confluence_logo_outline_svg.svg")).text()
+    document.getElementById("outlinelogo").innerHTML = svgData
+    console.log("SvgData", svgData)
 
     /*
     if (window.innerWidth > 720) {
