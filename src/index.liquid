@@ -43,10 +43,10 @@ id: video
       } ${pluralize(root, val)
       }`
 
-    let text = `${stringify(dL, "day", "d")
-      } ${stringify(hL, "hour", "h")
-      } ${stringify(mL, "minute", "m")
-      } and ${stringify(sL, "second", "s")
+    let text = `${dL != 0 ? stringify(dL, "day", "d") + " " : ""
+      }${dL != 0 ? stringify(hL, "hour", "h") + " " : ""
+      }${dL != 0 ? stringify(mL, "minute", "m") + " " : ""
+      }and ${dL != 0 ? stringify(sL, "second", "s") : ""
       } left`
 
     document.getElementById("countdowntext").innerHTML = text
@@ -57,12 +57,12 @@ id: video
 <!-- END COUNTDOWN -->
 
 <video autoplay muted loop playsinline id="confluence-hero-video">
-  <source src="/_media/nebula_720.mp4" type="video/mp4">
+  <source src="/_media/looped_video_compressed.mp4" type="video/mp4">
 </video>
 
 
 <!--
-<img id="confluence-hero-video" src="/_media/nebula_720.mp4">
+<img id="confluence-hero-video" src="/_media/looped_video_compressed.mp4">
 
 -->
 <!--
