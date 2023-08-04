@@ -1,7 +1,7 @@
 ---
 category: commerce
 short_description: Marketing event
-title: Altair
+title: Altair (Marketing)
 img: https://images.unsplash.com/photo-1532622785990-d2c36a76f5a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hcmtldGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days
 grades: Grades 10 to 12

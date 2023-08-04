@@ -1,7 +1,7 @@
 ---
 category: literary
 short_description: Writing event
-title: Hydra
+title: Hydra (Writing)
 img: https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdyaXRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60
 dates: 1 day
 grades: Grades 8 and 9

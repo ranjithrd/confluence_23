@@ -1,7 +1,7 @@
 ---
 category: humanities
 short_description: Moot court
-title: Columba
+title: Columba (Moot Court)
 img: /_media/court.jpg
 dates: 2 days
 grades: Grades 10 to 12

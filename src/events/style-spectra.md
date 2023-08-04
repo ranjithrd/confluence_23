@@ -1,7 +1,7 @@
 ---
 category: cultural
 short_description: Fashion event
-title: Cassiopeia
+title: Cassiopeia (Fashion Show)
 img: https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHNoaXJ0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days
 grades: Grades 10 to 12

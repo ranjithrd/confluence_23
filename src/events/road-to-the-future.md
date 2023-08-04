@@ -1,7 +1,7 @@
 ---
 category: environment
 short_description: Road to the future
-title: Lacerta
+title: Lacerta (Sustainable Cities)
 img: https://images.unsplash.com/photo-1440186902252-f1cfa1132349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9hZCUyMGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days
 grades: Grades 8 and 9

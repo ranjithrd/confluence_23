@@ -1,7 +1,7 @@
 ---
 category: cultural
 short_description: Art event
-title: Sculptor
+title: Sculptor (Art)
 img: https://images.unsplash.com/photo-1615233877682-fce31fbdb8d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0JTIwc3VwcGxpZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60
 dates: 1 day
 grades: Grades 8 and 9

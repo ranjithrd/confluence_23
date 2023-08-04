@@ -1,7 +1,7 @@
 ---
 category: commerce
 short_description: HR Event
-title: Draco
+title: Draco (Human Resources)
 img: https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aHJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60
 dates: 2 days
 grades: Grades 8 to 9

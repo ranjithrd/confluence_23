@@ -1,7 +1,7 @@
 ---
 category: cultural
 short_description: Dancing event
-title: Orion
+title: Orion (Dance)
 img: https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGRhbmNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60
 dates: 1 day
 grades: Grades 8 and 9
@@ -17,7 +17,10 @@ description: >-
   the beat, this event has something special in store for everyone.
 
 
-  Theme for the final round: **Dances through the Decades**.
+  Theme for the final round: **Bollywood Dances Through The Decades**.
+
+
+  Duration of dance to be prepared: **3.5 to 6 minutes**
 rules: >-
   * For the final event, the dance choreography has to be original. Plagiarism
   will not be allowed.

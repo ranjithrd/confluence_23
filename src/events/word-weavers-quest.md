@@ -1,7 +1,7 @@
 ---
 category: literary
 short_description: Sink or swim
-title: Pyxis
+title: Pyxis (Air-Crash Derivative)
 img: https://images.unsplash.com/photo-1612429085511-2c2ac3aac171?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2lua2luZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60
 dates: 2 days
 grades: Grades 10 to 12
